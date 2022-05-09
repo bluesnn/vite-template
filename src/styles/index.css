@@ -1,0 +1,82 @@
+html,
+body {
+  font-size: 14px;
+  color: var(--ud-gray-1);
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+#app,html,
+body{
+  height: 100%;
+  -webkit-text-size-adjust: none !important;
+}
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+figure,
+figcaption,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-size: 100%;
+}
+
+i,
+em {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+input {
+  outline: none;
+}
+button {
+  border: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+/* 省略号 */
+.ud-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

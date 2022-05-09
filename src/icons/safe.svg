@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>切片</title>
+    <g id="1440-750" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录" transform="translate(-490.000000, -415.000000)">
+            <g transform="translate(475.000000, 324.000000)" id="编组-4">
+                <g transform="translate(0.000000, 74.000000)">
+                    <g id="ico/24x24/safe" transform="translate(15.000000, 17.000000)">
+                        <polygon id="路径" fill-opacity="0.01" fill="#FFFFFF" fill-rule="nonzero" points="20 0 0 0 0 20 20 20"></polygon>
+                        <g id="编组" transform="translate(2.500000, 1.666667)" stroke-linejoin="round" stroke-width="1.25">
+                            <path d="M0,2.18985 L7.50358333,0 L15,2.18985 L15,6.68070833 C15,11.4009167 11.97925,15.5914167 7.50108333,17.0835417 C3.02170833,15.5914583 0,11.4 0,6.678625 L0,2.18985 Z" id="路径" stroke="#8C8C8C"></path>
+                            <polyline id="路径" stroke="#00B395" stroke-linecap="round" points="3.75 7.91666667 6.66666667 10.8333333 11.6666667 5.83333333"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
