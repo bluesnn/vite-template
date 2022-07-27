@@ -1,11 +1,14 @@
 <template>
-  <div class="home-root">{{ appStore.count }}</div>
+  <div class="home-root">
+    {{ appStore.count }}
+  </div>
   <van-button
     type="primary"
     @click="appStore.increment()"
   >
     pinia
   </van-button>
+
   <h3>注意：</h3>
   <p>
     1、vant组件可以直接使用，例如：
@@ -52,6 +55,10 @@
 import { useToggle } from '@/hooks'
 import { userLogout, userToken } from '@/api'
 import { useAppStore } from '@/store/modules/app'
+
+defineOptions({
+  name: 'DemoPage'
+})
 
 const appStore = useAppStore()
 console.log('appStore: ', appStore)

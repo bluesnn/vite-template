@@ -1,10 +1,10 @@
 import { resolve } from 'path'
 import vue from '@vitejs/plugin-vue'
-import viteSvgIcons from 'vite-plugin-svg-icons'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import viteCompression from 'vite-plugin-compression'
-import ViteComponents from 'unplugin-vue-components/vite'
+import Components from 'unplugin-vue-components/vite'
 import { VantResolver } from 'unplugin-vue-components/resolvers'
-import styleImport, { VantResolve } from 'vite-plugin-style-import'
+import DefineOptions from 'unplugin-vue-define-options/vite'
 
 export default {
   resolve: {
@@ -14,13 +14,11 @@ export default {
   },
   plugins: [
     vue(),
-    ViteComponents({
+    DefineOptions(),
+    Components({
       resolvers: [
         VantResolver()
       ]
-    }),
-    styleImport({
-      resolves: [VantResolve()]
     }),
     viteCompression({
       verbose: true,
@@ -29,7 +27,7 @@ export default {
       algorithm: 'gzip',
       ext: '.gz'
     }),
-    viteSvgIcons({
+    createSvgIconsPlugin({
       iconDirs: [resolve(process.cwd(), 'src/icons')],
       symbolId: 'icon-[dir]-[name]'
     })

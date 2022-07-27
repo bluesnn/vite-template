@@ -14,17 +14,15 @@ module.exports = {
     'vue/setup-compiler-macros': true
   },
   globals: {
-    defineProps: 'readonly'
+    defineProps: 'readonly',
+    defineOptions: 'writble'
   },
   rules: {
     'vue/script-setup-uses-vars': 'error',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'vue/singleline-html-element-content-newline': 'off',
-    'vue/multiline-html-element-content-newline': 'off',
-    'vue/name-property-casing': ['error', 'PascalCase'],
     'vue/no-v-html': 'off',
-    'vue/html-self-closing': 1,
+    'vue/multi-word-component-names': 'off',
     'accessor-pairs': 2,
     'arrow-spacing': [2, {
       'before': true,
@@ -186,7 +184,6 @@ module.exports = {
     'prefer-const': 2,
     'object-curly-spacing': [2, 'always', {
       objectsInObjects: false
-    }],
-    'vue/multi-word-component-names': 0
+    }]
   }
 }
