@@ -1,5 +1,4 @@
-import { defineStore } from 'pinia'
-import { store } from '@/store'
+import { defineStore, acceptHMRUpdate } from 'pinia'
 
 export const useAppStore = defineStore('app', {
   state: () => ({
@@ -18,6 +17,6 @@ export const useAppStore = defineStore('app', {
   }
 })
 
-export function useAppStoreWithOut() {
-  return useAppStore(store)
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useAppStore, import.meta.hot))
 }

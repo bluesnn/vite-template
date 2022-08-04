@@ -15,7 +15,7 @@ module.exports = {
   },
   globals: {
     defineProps: 'readonly',
-    defineOptions: 'writble'
+    defineOptions: 'readonly'
   },
   rules: {
     'vue/script-setup-uses-vars': 'error',

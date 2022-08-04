@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 14px;
-  color: var(--ud-gray-1);
+  color: var(--ad-gray-1);
   font-family: PingFangSC-Regular, PingFang SC;
 }
 #app,html,
@@ -73,10 +73,4 @@ button {
   height: 0;
   overflow: hidden;
   clear: both;
-}
-/* 省略号 */
-.ud-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

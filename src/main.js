@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { setupStore } from '@/store'
+import pinia from '@/store'
 import router from '@/router'
 import 'virtual:svg-icons-register'
 
@@ -15,8 +15,7 @@ import '@/styles/vant/index.css'
 
 const app = createApp(App)
 
-setupStore(app)
-
 app.component('SvgIcon', SvgIcon)
   .use(router)
+  .use(pinia)
   .mount('#app')

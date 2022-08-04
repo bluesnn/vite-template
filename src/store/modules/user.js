@@ -1,14 +1,11 @@
-import { defineStore } from 'pinia'
-import { store } from '@/store'
+import { defineStore, acceptHMRUpdate } from 'pinia'
 import { userApi } from '@/api'
-import { useAppStoreWithOut } from '@/store/modules/app'
-
-const appStore = useAppStoreWithOut()
+import { useAppStore } from '@/store/modules/app'
 
 export const useUserStore = defineStore('user', {
   state: () => ({
     user: '',
-    count: appStore.count
+    count: useAppStore().count
   }),
 
   getters: {},
@@ -23,6 +20,6 @@ export const useUserStore = defineStore('user', {
   }
 })
 
-export function useUserStoreWithOut() {
-  return useUserStore(store)
+if (import.meta.hot) {
+  import.meta.hot.accept(acceptHMRUpdate(useUserStore, import.meta.hot))
 }

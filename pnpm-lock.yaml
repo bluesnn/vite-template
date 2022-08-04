@@ -11,7 +11,7 @@ specifiers:
   less: ^4.1.3
   normalize.css: ^8.0.1
   pinia: ^2.0.17
-  postcss-px-to-viewport: ^1.1.1
+  postcss-px2vp: ^1.1.4
   unocss: ^0.44.7
   unplugin-vue-components: ^0.21.2
   unplugin-vue-define-options: ^0.6.2
@@ -40,7 +40,7 @@ devDependencies:
   eslint: registry.npmjs.org/eslint/8.20.0
   eslint-plugin-vue: registry.npmjs.org/eslint-plugin-vue/9.3.0_eslint@8.20.0
   less: registry.npmjs.org/less/4.1.3
-  postcss-px-to-viewport: registry.npmjs.org/postcss-px-to-viewport/1.1.1
+  postcss-px2vp: registry.npmjs.org/postcss-px2vp/1.1.4
   unocss: registry.npmjs.org/unocss/0.44.7_vite@3.0.3
   unplugin-vue-components: registry.npmjs.org/unplugin-vue-components/0.21.2_vite@3.0.3+vue@3.2.37
   unplugin-vue-define-options: registry.npmjs.org/unplugin-vue-define-options/0.6.2_vite@3.0.3+vue@3.2.37
@@ -553,6 +553,7 @@ packages:
     version: 3.2.37
     dependencies:
       '@vue/shared': registry.npmjs.org/@vue/shared/3.2.37
+    dev: false
 
   registry.npmjs.org/@vue/runtime-core/3.2.37:
     resolution: {integrity: sha512-JPcd9kFyEdXLl/i0ClS7lwgcs0QpUAWj+SKX2ZC3ANKi1U4DOtiEr6cRqFXsPwY5u1L9fAjkinIdB8Rz3FoYNQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vue/runtime-core/-/runtime-core-3.2.37.tgz}
@@ -561,6 +562,7 @@ packages:
     dependencies:
       '@vue/reactivity': registry.npmjs.org/@vue/reactivity/3.2.37
       '@vue/shared': registry.npmjs.org/@vue/shared/3.2.37
+    dev: false
 
   registry.npmjs.org/@vue/runtime-dom/3.2.37:
     resolution: {integrity: sha512-HimKdh9BepShW6YozwRKAYjYQWg9mQn63RGEiSswMbW+ssIht1MILYlVGkAGGQbkhSh31PCdoUcfiu4apXJoPw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vue/runtime-dom/-/runtime-dom-3.2.37.tgz}
@@ -570,6 +572,7 @@ packages:
       '@vue/runtime-core': registry.npmjs.org/@vue/runtime-core/3.2.37
       '@vue/shared': registry.npmjs.org/@vue/shared/3.2.37
       csstype: registry.npmjs.org/csstype/2.6.20
+    dev: false
 
   registry.npmjs.org/@vue/server-renderer/3.2.37_vue@3.2.37:
     resolution: {integrity: sha512-kLITEJvaYgZQ2h47hIzPh2K3jG8c1zCVbp/o/bzQOyvzaKiCquKS7AaioPI28GNxIsE/zSx+EwWYsNxDCX95MA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vue/server-renderer/-/server-renderer-3.2.37.tgz}
@@ -582,6 +585,7 @@ packages:
       '@vue/compiler-ssr': registry.npmjs.org/@vue/compiler-ssr/3.2.37
       '@vue/shared': registry.npmjs.org/@vue/shared/3.2.37
       vue: registry.npmjs.org/vue/3.2.37
+    dev: false
 
   registry.npmjs.org/@vue/shared/3.2.37:
     resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/@vue/shared/-/shared-3.2.37.tgz}
@@ -1114,6 +1118,7 @@ packages:
     resolution: {integrity: sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/csstype/-/csstype-2.6.20.tgz}
     name: csstype
     version: 2.6.20
+    dev: false
 
   registry.npmjs.org/dayjs/1.11.4:
     resolution: {integrity: sha512-Zj/lPM5hOvQ1Bf7uAvewDaUcsJoI6JmNqmHhHl3nyumwe0XHwt8sWdOVAPACJzCebL8gQCi+K49w7iKWnGwX9g==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/dayjs/-/dayjs-1.11.4.tgz}
@@ -3113,13 +3118,10 @@ packages:
       postcss: registry.npmjs.org/postcss/5.2.18
     dev: true
 
-  registry.npmjs.org/postcss-px-to-viewport/1.1.1:
-    resolution: {integrity: sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/postcss-px-to-viewport/-/postcss-px-to-viewport-1.1.1.tgz}
-    name: postcss-px-to-viewport
-    version: 1.1.1
-    dependencies:
-      object-assign: registry.npmjs.org/object-assign/4.1.1
-      postcss: registry.npmjs.org/postcss/8.4.14
+  registry.npmjs.org/postcss-px2vp/1.1.4:
+    resolution: {integrity: sha512-Ooo8KyqJuYH7jWjSHpJiITgTLz0SJYIAxS7mU1P8JWzcUwM3n/Jt2GzWdA1sMjnzArtUNClkvETXn3YqoobD/A==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/postcss-px2vp/-/postcss-px2vp-1.1.4.tgz}
+    name: postcss-px2vp
+    version: 1.1.4
     dev: true
 
   registry.npmjs.org/postcss-selector-parser/6.0.10:
@@ -4120,6 +4122,7 @@ packages:
       '@vue/runtime-dom': registry.npmjs.org/@vue/runtime-dom/3.2.37
       '@vue/server-renderer': registry.npmjs.org/@vue/server-renderer/3.2.37_vue@3.2.37
       '@vue/shared': registry.npmjs.org/@vue/shared/3.2.37
+    dev: false
 
   registry.npmjs.org/webpack-sources/3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==, registry: https://registry.yarnpkg.com/, tarball: https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.2.3.tgz}
